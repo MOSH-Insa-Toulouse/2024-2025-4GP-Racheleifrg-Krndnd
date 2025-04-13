@@ -16,6 +16,8 @@ created using MIT App Inventor.
 */
 
 
+//NB: Please set the potentiometre back to 1kohms at the end,the programme does not do it automatically
+
 // ----- The libraries used:-----------------------------------------------------------------------------------------------------------------
 #include <SoftwareSerial.h>
 #include <Adafruit_SSD1306.h> // oled
