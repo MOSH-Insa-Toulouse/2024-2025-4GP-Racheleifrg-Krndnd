@@ -41,6 +41,7 @@ In this github repository you wil find independent folders for each part of our 
 * 1 HC-05 Bluetooth® module
 * Resistances: 1kΩ, 10kΩ, 100kΩ, 100kΩ
 * Capacitors: 100nF, 100nF, 1µF
+* For the bench test: 1 round glass, 1 glue stick, 1 tape, 1 toothpaste cap, 1 liquid correction fluid (Tipp-Ex)
 
 <figure>
   <img src="pictures/complete_project.jpg" alt="complete_project" width="450"/>
