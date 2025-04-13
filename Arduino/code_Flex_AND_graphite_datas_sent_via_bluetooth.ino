@@ -13,6 +13,7 @@ their selection.
 The acquired data from both sensors are sent via bluetooth by an HC-05 module, and received by an application created using MIT App Inventor.
 */
 
+//NB: Please set the potentiometre back to 1kohms at the end,the programme does not do it automatically
 
 
 // ----- The libraries used:--------------------------------------------------------------------------------------------------------------------------
