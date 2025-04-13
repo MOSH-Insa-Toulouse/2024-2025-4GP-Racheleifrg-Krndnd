@@ -42,17 +42,23 @@ In this github repository you wil find independent folders for each part of our 
 * Resistances: 1kΩ, 10kΩ, 100kΩ, 100kΩ
 * Capacitors: 100nF, 100nF, 1µF
 
+<figure>
+  <img src="pictures/complete_project.jpg" alt="complete_project" width="450"/>
+  <figcaption>Figure 1: Image of the complete project.</figcaption>
+</figure>
+
 
 ## How to use
 
 ### Project Assembly
 
-1) Create the PCB using the file [mettre le nom] found in the **KiCad** folder.
+1) Create the PCB using the file [mettre le nom] found in the **KiCad** folder. NB: you can also use a breadboard and follow the schematic from the following file:[mettre le nom]
 2) Solder the components following the PCB and schematic that can be found in the same **KiCad** folder.
 3) Connect the PCB to the Arduino, and then connect the Arduino to a PC via USB.
 4) Choose one of the two codes from the **Arduino** folder based on your needs.      
 5) Once the program is open in the Arduino IDE, select **Arduino Uno** as the board.
 6) Run the code
+7) If you chose: *code_Felex_OR_graphite_datas_sent_via_bluetooth.ino* select the datas you want to plot on the app, following the instruction that appear on the Serial.
 
 
 ### Oled's Menus
