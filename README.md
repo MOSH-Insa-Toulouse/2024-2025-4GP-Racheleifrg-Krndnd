@@ -96,7 +96,7 @@ To switch between menus, press the rotary encoder.Inside each menu, rotate the e
 
 <figure>
   <img src="Androïd_app/Flex_OR_graph/on_the_phone/step1.jpg" alt="app" width="200"/>
-  <figcaption>Figure 2: Image of screen when we open the app.</figcaption>
+  <figcaption>Figure 2: Image of the screen when we open the app</figcaption>
 </figure>
 
 ### Test Bench
