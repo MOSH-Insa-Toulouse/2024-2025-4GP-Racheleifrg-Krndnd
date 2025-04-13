@@ -4,7 +4,7 @@ Students: Karine Dandy, Rachele Iffrig
 4th year/Genie Physique
 
 Project's description:  
-This Arduino code reads the resistance of an industrial strain gauge sensor as well 
+This Arduino code calculates the resistance of an industrial strain gauge sensor as well 
 as a graphite-based sensor fabricated following the paper: "Pencil Drawn Gauges and Chemiresistors"
 by Cheng-Wei et al.(2014). The resistance values from both sensors are accessible from one of the
 several menus displayed on an Oled screen.To go through these menus (flex sensor datas/Graphite sensor datas
