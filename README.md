@@ -17,7 +17,7 @@ You can recreate this project from scratch, as we have provided everything — f
 
 In this GitHub repository you wil find independent folders for each part of our project.
 
-1) **Kicad**: The KiCad folder contains our project (KiCad-Shield-Uno-FlexSensor) and all the librairies we created and used. It is ready to use, you will only need to download KiCad on your laptop. 
+1) **Kicad**: The KiCad folder contains our project (KiCad-Shield-Uno-FlexSensor) and all the libraries we created and used. It is ready to use, you will only need to download KiCad on your laptop. 
    
 2) **Arduino code**: The Arduino folder contains 2 different codes: 
      *code_Felex_OR_graphite_datas_sent_via_bluetooth.ino* and *code_Flex_AND_graphite_datas_sent_via_bluetooth*. Both codes calculate the resistance of the industrial strain gauge sensor as well the graphite-based one, and are using the rotary encoder to navigate through the different menus displayed on the Oled screen. The difference between the two codes comes with what datas we are sending via bluetooth. In the first code, at the beginning, the user chooses which sensor’s information they want to plot in the app. The second code sends data from both sensors simultaneously: both resistances are plotted, but with less precision. 
@@ -39,13 +39,11 @@ experimental modifications, our handmade graphite sensor could be optimized.
  
 ## Physic behind the low tech strain gauges
 
-This graphite-based sensor works similarly to a strain gauge and can detect mechanical deformations
-in tension or compression. It can measure resistances of the order of the giga-ohm. The working
-principle relies on the relationship between the average nanoparticle distance and the resistance. Due to
-the granular property of the graphite, in tension, the layer stretches, increasing the distance between the
-nanoparticles (Figure 1). According to the percolation theory, the material’s conductivity is then reduced,
-and its resistance increased. In compression, the distance between the nanoparticles is reduced, and the
-resistance decreases as more electrical paths are present.
+This graphite-based sensor works similarly to a strain gauge and can detect mechanical deformations in tension or compression. 
+It can measure resistances of the order of the giga-ohm. The working principle relies on the relationship between the average nanoparticle distance and the resistance. 
+Due to the granular property of the graphite, in tension, the layer stretches, increasing the distance between the nanoparticles (Figure 1). 
+According to the percolation theory, the material’s conductivity is then reduced, and its resistance increased. 
+In compression, the distance between the nanoparticles is reduced, and the resistance decreases as more electrical paths are present.
 
 ## Necessary components to carry out this project
 
@@ -73,7 +71,7 @@ The first step is to realise the electrical amplifier circuit and the footprint 
 
 The second step is to order or fabricate the PCB and install it on an Arduino UNO support. 
 
-By using similar features to our graphite-based sensor (Figure ), and our Arduino code (available on the Arduino code folder), it is possible to measure a resistance for a given deformation. 
+By using similar features to our graphite-based sensor (Figure ), and our Arduino code (available in the Arduino code folder), it is possible to measure a resistance for a given deformation. 
 
 This graphite-based sensor can measure deformations up to 0.006, at room temperature. This sensor can
 be made with other papers and graphite pencils in order to improve its sensitivity. We highly recommend
