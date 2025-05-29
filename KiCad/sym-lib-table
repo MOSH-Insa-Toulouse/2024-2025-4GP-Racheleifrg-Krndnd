@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Ma_Library_SHield")(type "KiCad")(uri "C:/Users/rache/OneDrive/Documents/INSA 2024_2025/Semestre 2/Capteur au banc de test/Kicad/capteur_graphite/Nouveau/Ma_Library_SHield.kicad_sym")(options "")(descr ""))
+  (lib (name "MaLibOK")(type "KiCad")(uri "${KIPRJMOD}/MaLibOK.kicad_sym")(options "")(descr ""))
+)
