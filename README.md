@@ -89,7 +89,7 @@ the use of thin papers and harder graphite pencils.
 
 ### Project Assembly
 
-1) Create the PCB using the file [mettre le nom] found in the **KiCad** folder. NB: you can also use a breadboard and follow the schematic from the following file:[mettre le nom]
+1) Create the PCB using the file *KiCad-Shield-Uno-FlexSensor.kicad_pro* (KiCad/KiCad-Shield-Uno-FlexSensor.kicad_pro) found in the **KiCad** folder. NB: you can also use a breadboard and follow the schematic from the following file: *KiCad-Shield-Uno-FlexSensor.kicad_sch* (KiCad/KiCad-Shield-Uno-FlexSensor.kicad_sch)
 2) Solder the components following the PCB and schematic that can be found in the same **KiCad** folder.
 3) Connect the PCB to the Arduino, and then connect the Arduino to a PC via USB.
 4) Choose one of the two codes from the **Arduino** folder based on your needs.      
