@@ -20,7 +20,7 @@ In this GitHub repository you wil find independent folders for each part of our 
 1) **Kicad**: The KiCad folder contains our project (KiCad-Shield-Uno-FlexSensor) and all the libraries we created and used. It is ready to use, you will only need to download KiCad on your laptop. 
    
 2) **Arduino code**: The Arduino folder contains 2 different codes: 
-     *code_Felex_OR_graphite_datas_sent_via_bluetooth.ino* and *code_Flex_AND_graphite_datas_sent_via_bluetooth*. Both codes calculate the resistance of the industrial strain gauge sensor as well the graphite-based one, and are using the rotary encoder to navigate through the different menus displayed on the Oled screen. The difference between the two codes comes with what datas we are sending via bluetooth. In the first code, at the beginning, the user chooses which sensor’s information they want to plot in the app. The second code sends data from both sensors simultaneously: both resistances are plotted, but with less precision. 
+     *code_Flex_OR_graphite_datas_sent_via_bluetooth.ino* and *code_Flex_AND_graphite_datas_sent_via_bluetooth*. Both codes calculate the resistance of the industrial strain gauge sensor as well the graphite-based one, and are using the rotary encoder to navigate through the different menus displayed on the Oled screen. The difference between the two codes comes with what datas we are sending via bluetooth. In the first code, at the beginning, the user chooses which sensor’s information they want to plot in the app. The second code sends data from both sensors simultaneously: both resistances are plotted, but with less precision. 
    
 3) **Android App**: The Androïd App folder contains all the informations concerning the two apps, made with MIT App Inventor, that are receiving all the datas sent by bluetooth. With these apps, compatible with Android, you can either plot the resistances of both the flex and graphite sensors simultaneously, or choose to plot only one of them, depending on the code you chose.      
 
@@ -44,6 +44,11 @@ It can measure resistances of the order of the giga-ohm. The working principle r
 Due to the granular property of the graphite, in tension, the layer stretches, increasing the distance between the nanoparticles (Figure 1). 
 According to the percolation theory, the material’s conductivity is then reduced, and its resistance increased. 
 In compression, the distance between the nanoparticles is reduced, and the resistance decreases as more electrical paths are present.
+
+![Imagen1](pictures/sensor_main_features.png)
+
+Figure 1 – Working principle of the graphite-based sensor in compression and tension. Extracted from
+“Pencil Drawn Strain Gauges and Chemiresistors on Paper”, by Cheng-Wei et al.
 
 ## Necessary components to carry out this project
 
