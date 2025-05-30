@@ -17,10 +17,10 @@ You can recreate this project from scratch, as we have provided everything — f
 
 In this GitHub repository you wil find independent folders for each part of our project.
 
-1) **Kicad**: The KiCad folder contains our project (KiCad-Shield-Uno-FlexSensor) and all the libraries we created and used. It is ready to use, you will only need to download KiCad on your laptop. 
+1) **KiCad**: The KiCad folder contains our project (KiCad-Shield-Uno-FlexSensor) and all the libraries we created and used. It is ready to use, you will only need to download KiCad on your laptop. 
    
 2) **Arduino code**: The Arduino folder contains 2 different codes: 
-     *code_Flex_OR_graphite_datas_sent_via_bluetooth.ino* and *code_Flex_AND_graphite_datas_sent_via_bluetooth*. Both codes calculate the resistance of the industrial strain gauge sensor as well the graphite-based one, and are using the rotary encoder to navigate through the different menus displayed on the Oled screen. The difference between the two codes comes with what data we are sending via Bluetooth®. In the first code, at the beginning, the user chooses which sensor’s information they want to plot in the app. The second code sends data from both sensors simultaneously: both resistances are plotted, but with less precision. 
+     *code_Flex_OR_graphite_datas_sent_via_bluetooth.ino* and *code_Flex_AND_graphite_datas_sent_via_bluetooth*. Both codes calculate the resistance of the industrial strain gauge sensor as well the graphite-based one, and are using the rotary encoder to navigate through the different menus displayed on the OLED screen. The difference between the two codes comes with what data we are sending via Bluetooth®. In the first code, at the beginning, the user chooses which sensor’s information they want to plot in the app. The second code sends data from both sensors simultaneously: both resistances are plotted, but with less precision. 
    
 3) **Android App**: The Androïd App folder contains all the informations concerning the two apps, made with MIT App Inventor, that are receiving all the data sent via Bluetooth®. With these apps, compatible with Android, you can either plot the resistances of both the flex and graphite sensors simultaneously, or choose to plot only one of them, depending on the code you chose.      
 
@@ -94,11 +94,11 @@ the use of thin papers and harder graphite pencils.
 3) Connect the PCB to the Arduino, and then connect the Arduino to a PC via USB.
 4) Choose one of the two codes from the **Arduino** folder based on your needs.      
 5) Once the program is open in the Arduino IDE, select **Arduino Uno** as the board.
-6) Run the code
-7) If you chose: *code_Felex_OR_graphite_datas_sent_via_bluetooth.ino* select the data you want to plot on the app, following the instruction that appear on the Serial.
+6) Run the code.
+7) If you chose: *code_Felex_OR_graphite_datas_sent_via_bluetooth.ino* select the data you want to plot on the app, following the instructions that appear on the Serial.
 
 
-### Oled's Menus
+### OLED's Menus
 When you upload the code to the Arduino, the OLED screen lights up. On the OLED display, you can access **three different menus**:
 
 1. **Potentiometer Selection Menu**  
@@ -109,12 +109,12 @@ When you upload the code to the Arduino, the OLED screen lights up. On the OLED 
 
 3. **Graphite Sensor Data Menu**  
    Displays real-time data from the **graphite sensor**.<br> <br>
-To switch between menus, press the rotary encoder.Inside each menu, rotate the encoder to scroll through the available options. To select an option (if applicable), press the rotary encoder's switch.
+To switch between menus, press the rotary encoder. Inside each menu, rotate the encoder to scroll through the available options. To select an option (if applicable), press the rotary encoder's switch.
 
 ### Android App
 1. **Pair your smartphone with the HC-05 Bluetooth module.** If a code is requested, enter **0000** or **1234**.
 
-2. **Download the `.exe` file to your smartphone** by scanning the **QR code** found in the Android App` folder.
+2. **Download the `.exe` file to your smartphone** by scanning the **QR code** in the folder of the Android App.
 
 3. **Open the application**
 4. **Grant the necessary permissions** to the application so it can detect Bluetooth® devices connected to your Android.This can be done via your phone’s **Bluetooth® or app settings**.
@@ -140,7 +140,7 @@ To switch between menus, press the rotary encoder.Inside each menu, rotate the e
 
 To test and compare our graphite-based sensor to a commercial sensor (the flex sensor), we used five objects with different diameters. We then fabricated and tested our graphite-based sensor using three different types of pencil: 2B, H, and HB.   
 
-![Imagen5](Bench test/bench_test.jpg)
+![Imagen5]("Bench test/bench_test.jpg")
 
 Figure 5 – Photography of the objects used with the corresponding diameter during the bench test.
 
