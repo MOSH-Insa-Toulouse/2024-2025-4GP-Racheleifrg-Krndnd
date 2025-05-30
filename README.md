@@ -10,7 +10,7 @@ INSA Toulouse
 
 ## Project Description
 
-The aim of this project is to determine the main characteristics of a low-tech constraint sensor, as introduced in the paper “Pencil Drawn Strain Gauges and Chemiresistors on Paper”  by Cheng-Wei Lin, Zhibo Zhao, Jaemyung Kim & Jiaxing Huang, published on Nature in 2014, and to compare them with those of an industrial flex sensor. To do so, both sensors are managed by an Arduino Uno board. On this board we also have an OLED screen in order to display the data, and we navigate through the menus using a rotary encoder. The data are sent to an Android application via a Bluetooth® module.<br> <br>
+The aim of this project is to determine the main characteristics of a low-tech strain sensor, as introduced in the paper “Pencil Drawn Strain Gauges and Chemiresistors on Paper”  by Cheng-Wei Lin, Zhibo Zhao, Jaemyung Kim & Jiaxing Huang, published on Nature in 2014, and to compare them with those of an industrial flex sensor. To do so, both sensors are managed by an Arduino Uno board. On this board we also have an OLED screen in order to display the data, and we navigate through the menus using a rotary encoder. The data are sent to an Android application via a Bluetooth® module.<br> <br>
 You can recreate this project from scratch, as we have provided everything — from the PCB design using KiCad, the Arduino code, and the Android app, to the test bench setup used to compare both sensors and create the graphite sensor’s datasheet. 
 
 ## Content
@@ -30,19 +30,19 @@ In this GitHub repository you will find independent folders for each part of our
    
 6) **Sensor project presentation**: The Sensor project presentation folder contains a PowerPoint in which we explain the different steps of our project, the difficulties we faced and the results we obtained.
 
-7) **Datasheet**: The datasheet folder contains the datasheet of our graphite-based sensor. This document describes the main features of the graphite-based sensor, its working principle, its working conditions, and presents the results of the flex sensor and graphite-based sensor comparison. This graphite-based sensor can measure deformations up to 0.006, at room temperature. Higher deformations can break the graphite sensor. 
+7) **Datasheet**: The datasheet folder contains the datasheet of our graphite-based sensor. This document describes the main features of the graphite-based sensor, its working principle, its working conditions, and presents the results of the comparison between the flex sensor and graphite-based one. This graphite-based sensor can measure deformations up to 0.006, at room temperature. Higher deformations can break the graphite sensor. 
 
-We found that the hardest pencil (the H) is the most sensitive sensor. The same conclusion was found by Wei et al. Measurement errors may
+We found that the hardest pencil (H) was the most sensitive. The same conclusion was also reached by Wei et al. Measurement errors may
 have influenced our results, or we may have omitted other unknown factors. Nevertheless, a potential
 application for this technology can be observed when using hard pencils. With further material and
 experimental modifications, our handmade graphite sensor could be optimized.
  
 ## Physic behind the low tech strain gauges
 
-This graphite-based sensor works similarly to a strain gauge and can detect mechanical deformations in tension or compression. 
+This graphite-based sensor works similarly to a strain gauge and can detect mechanical deformations under tension or compression. 
 It can measure resistances of the order of the giga-ohm. The working principle relies on the relationship between the average nanoparticle distance and the resistance. 
-Due to the granular property of the graphite, in tension, the layer stretches, increasing the distance between the nanoparticles (Figure 1). 
-According to the percolation theory, the material’s conductivity is then reduced, and its resistance increased. 
+Due to the granular property of the graphite, under tension, the layer stretches, increasing the distance between the nanoparticles (Figure 1). 
+According to percolation theory, the material’s conductivity decreases, while its resistance increases. 
 In compression, the distance between the nanoparticles is reduced, and the resistance decreases as more electrical paths are present.
 
 ![Imagen1](pictures/sensor_working_principle.png)
@@ -74,9 +74,9 @@ Figure 1 – Working principle of the graphite-based sensor in compression and t
 
 The first step is to create the electrical amplifier circuit and the footprint of the PCB on KiCad. Our complete KiCad project and all the libraries used can be found in the KiCad folder.  
 
-The second step is to order or fabricate the PCB and install it on an Arduino UNO support. 
+The second step is to order or fabricate the PCB and mount it on an Arduino UNO board. 
 
-By using similar features to our graphite-based sensor (Figure 3), and our Arduino code (available in the Arduino code folder), it is possible to measure a resistance for a given deformation. 
+By using similar features as our graphite-based sensor (Figure 3), and our Arduino code (available in the Arduino code folder), it is possible to measure a resistance for a given deformation. 
 
 ![Imagen3](pictures/sensor_main_features.png)
 
@@ -138,9 +138,9 @@ To switch between menus, press the rotary encoder. Inside each menu, rotate the 
 
 ### Test Bench
 
-To test and compare our graphite-based sensor to a commercial sensor (the flex sensor), we used five objects with different diameters. We then fabricated and tested our graphite-based sensor using three different types of pencil: 2B, H, and HB.   
+To test and compare our graphite-based sensor to a commercial sensor (the flex sensor), we used five objects with different diameters. We then fabricated and tested our graphite-based sensor using three different types of pencils: 2B, H, and HB.   
 
 ![Imagen5](Bench_test/bench_test.jpg)
 
-Figure 5 – Photography of the objects used with the corresponding diameter during the bench test.
+Figure 5 – Photograph of the objects used with the corresponding diameters during the bench test.
 
