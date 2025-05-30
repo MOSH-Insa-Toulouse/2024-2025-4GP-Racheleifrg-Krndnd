@@ -10,7 +10,7 @@ INSA Toulouse
 
 ## Project Description
 
-The aim of this project is to determine the main characteristics of a low-tech constraint sensor, as introduced in the paper “Pencil Drawn Strain Gauges and Chemiresistors on Paper”  by Cheng-Wei Lin, Zhibo Zhao, Jaemyung Kim & Jiaxing Huang, published on Nature in 2014, and to compare them with those of an industrial flex sensor. To do so, both sensors are managed by an Arduino Uno board. On this board we also have an OLED screen in order to display the datas, and we navigate through the menus using a rotary encoder. The data are sent to an Android application via a Bluetooth® module.<br> <br>
+The aim of this project is to determine the main characteristics of a low-tech constraint sensor, as introduced in the paper “Pencil Drawn Strain Gauges and Chemiresistors on Paper”  by Cheng-Wei Lin, Zhibo Zhao, Jaemyung Kim & Jiaxing Huang, published on Nature in 2014, and to compare them with those of an industrial flex sensor. To do so, both sensors are managed by an Arduino Uno board. On this board we also have an OLED screen in order to display the data, and we navigate through the menus using a rotary encoder. The data are sent to an Android application via a Bluetooth® module.<br> <br>
 You can recreate this project from scratch, as we have provided everything — from the PCB design using KiCad, the Arduino code, and the Android app, to the test bench setup used to compare both sensors and create the graphite sensor’s datasheet. 
 
 ## Content
@@ -20,9 +20,9 @@ In this GitHub repository you wil find independent folders for each part of our 
 1) **Kicad**: The KiCad folder contains our project (KiCad-Shield-Uno-FlexSensor) and all the libraries we created and used. It is ready to use, you will only need to download KiCad on your laptop. 
    
 2) **Arduino code**: The Arduino folder contains 2 different codes: 
-     *code_Flex_OR_graphite_datas_sent_via_bluetooth.ino* and *code_Flex_AND_graphite_datas_sent_via_bluetooth*. Both codes calculate the resistance of the industrial strain gauge sensor as well the graphite-based one, and are using the rotary encoder to navigate through the different menus displayed on the Oled screen. The difference between the two codes comes with what datas we are sending via bluetooth. In the first code, at the beginning, the user chooses which sensor’s information they want to plot in the app. The second code sends data from both sensors simultaneously: both resistances are plotted, but with less precision. 
+     *code_Flex_OR_graphite_datas_sent_via_bluetooth.ino* and *code_Flex_AND_graphite_datas_sent_via_bluetooth*. Both codes calculate the resistance of the industrial strain gauge sensor as well the graphite-based one, and are using the rotary encoder to navigate through the different menus displayed on the Oled screen. The difference between the two codes comes with what data we are sending via Bluetooth®. In the first code, at the beginning, the user chooses which sensor’s information they want to plot in the app. The second code sends data from both sensors simultaneously: both resistances are plotted, but with less precision. 
    
-3) **Android App**: The Androïd App folder contains all the informations concerning the two apps, made with MIT App Inventor, that are receiving all the datas sent by bluetooth. With these apps, compatible with Android, you can either plot the resistances of both the flex and graphite sensors simultaneously, or choose to plot only one of them, depending on the code you chose.      
+3) **Android App**: The Androïd App folder contains all the informations concerning the two apps, made with MIT App Inventor, that are receiving all the data sent via Bluetooth®. With these apps, compatible with Android, you can either plot the resistances of both the flex and graphite sensors simultaneously, or choose to plot only one of them, depending on the code you chose.      
 
 4) **Bench test**: The Bench test folder contains pictures of our graphite-based sensor, and the bench test used.
 
@@ -72,7 +72,7 @@ Figure 1 – Working principle of the graphite-based sensor in compression and t
 
 ## How to use
 
-The first step is to realise the electrical amplifier circuit and the footprint of the PCB on KiCad. Our complete KiCad project and all the libraries used can be found in the KiCad folder.  
+The first step is to create the electrical amplifier circuit and the footprint of the PCB on KiCad. Our complete KiCad project and all the libraries used can be found in the KiCad folder.  
 
 The second step is to order or fabricate the PCB and install it on an Arduino UNO support. 
 
@@ -95,7 +95,7 @@ the use of thin papers and harder graphite pencils.
 4) Choose one of the two codes from the **Arduino** folder based on your needs.      
 5) Once the program is open in the Arduino IDE, select **Arduino Uno** as the board.
 6) Run the code
-7) If you chose: *code_Felex_OR_graphite_datas_sent_via_bluetooth.ino* select the datas you want to plot on the app, following the instruction that appear on the Serial.
+7) If you chose: *code_Felex_OR_graphite_datas_sent_via_bluetooth.ino* select the data you want to plot on the app, following the instruction that appear on the Serial.
 
 
 ### Oled's Menus
@@ -117,9 +117,9 @@ To switch between menus, press the rotary encoder.Inside each menu, rotate the e
 2. **Download the `.exe` file to your smartphone** by scanning the **QR code** found in the Android App` folder.
 
 3. **Open the application**
-4. **Grant the necessary permissions** to the application so it can detect Bluetooth devices connected to your Android.This can be done via your phone’s **Bluetooth or app settings**.
+4. **Grant the necessary permissions** to the application so it can detect Bluetooth® devices connected to your Android.This can be done via your phone’s **Bluetooth® or app settings**.
 
-5.  **Click on the Bluetooth button**.
+5.  **Click on the Bluetooth® button**.
 
 6. **Select the HC-05 module** from the list of available devices.
 
