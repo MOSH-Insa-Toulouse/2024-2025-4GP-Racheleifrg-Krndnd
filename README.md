@@ -45,7 +45,7 @@ Due to the granular property of the graphite, in tension, the layer stretches, i
 According to the percolation theory, the material’s conductivity is then reduced, and its resistance increased. 
 In compression, the distance between the nanoparticles is reduced, and the resistance decreases as more electrical paths are present.
 
-![Imagen1](pictures/sensor_main_features.png)
+![Imagen1](pictures/sensor_working_principle.png)
 
 Figure 1 – Working principle of the graphite-based sensor in compression and tension. Extracted from
 “Pencil Drawn Strain Gauges and Chemiresistors on Paper”, by Cheng-Wei et al.
@@ -66,7 +66,7 @@ Figure 1 – Working principle of the graphite-based sensor in compression and t
 
 <figure>
   <img src="pictures/complete_project.jpg" alt="complete_project" width="450"/>
-  <figcaption>Figure 1: Image of the complete project.</figcaption>
+  <figcaption>Figure 2 - Image of the complete project.</figcaption>
 </figure>
 
 
@@ -76,7 +76,12 @@ The first step is to realise the electrical amplifier circuit and the footprint 
 
 The second step is to order or fabricate the PCB and install it on an Arduino UNO support. 
 
-By using similar features to our graphite-based sensor (Figure ), and our Arduino code (available in the Arduino code folder), it is possible to measure a resistance for a given deformation. 
+By using similar features to our graphite-based sensor (Figure 3), and our Arduino code (available in the Arduino code folder), it is possible to measure a resistance for a given deformation. 
+
+![Imagen3](pictures/sensor_main_features.png)
+
+Figure 3 – Representation of our graphite-based sensor. The units are in mm. Extracted from the work
+of Paul Besnard and Niels Brun, available on GitHub.
 
 This graphite-based sensor can measure deformations up to 0.006, at room temperature. This sensor can
 be made with other papers and graphite pencils in order to improve its sensitivity. We highly recommend
@@ -128,10 +133,14 @@ To switch between menus, press the rotary encoder.Inside each menu, rotate the e
 
 <figure>
   <img src="Androïd_app/Flex_OR_graph/on_the_phone/step1.jpg" alt="app" width="200"/>
-  <figcaption>Figure 2: Image of the screen when we open the app</figcaption>
+  <figcaption>Figure 4 - Image of the screen when we open the app</figcaption>
 </figure>
 
 ### Test Bench
 
 To test and compare our graphite-based sensor to a commercial sensor (the flex sensor), we used five objects with different diameters. We then fabricated and tested our graphite-based sensor using three different types of pencil: 2B, H, and HB.   
+
+![Imagen5](Bench test/bench_test.jpg)
+
+Figure 5 – Photography of the objects used with the corresponding diameter during the bench test.
 
